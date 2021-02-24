@@ -22,12 +22,16 @@ body {
 }
 
 /* Padding */
-.section,
 .results-banner *,
 .text-container *,
-.our-offer *,
+.our-offer>*,
 .results-list .col-3 * {
-    padding: 10px 0;
+    padding: 10px;
+}
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -71,12 +75,6 @@ footer span {
 .our-offer img,
 .results img {
     margin: auto;
-}
-
-/* Common floating */
-
-.floater {
-    float: left;
 }
 
 /* Common-text */
@@ -160,7 +158,7 @@ nav {
     position: relative;
     background-image: url("../img/jumbotron.png");
     background-repeat: no-repeat;
-    background-position: 100% 65%;
+    background-position: bottom right;
     height: 600px;
 }
 
@@ -172,7 +170,7 @@ nav {
     background-color: #afebe4;
     border-top: 3px solid #33475b;
     border-bottom: 3px solid #33475b;
-    height: 50px;
+    height: 77px;
 }
 
 h1 {
@@ -193,17 +191,11 @@ h1 {
     background-color: #f4f9fd;
 }
 
-/* our-offer>slogan */
-
 .slogan img {
     height: 180px;
 }
 
-/* /our-offer>slogan */
-
 /* our-offer>offer-detail */
-
-
 
 .our-offer li::before {
     font-family: "Font Awesome 5 Free";
@@ -217,13 +209,32 @@ h1 {
     box-shadow: 0 0 11px #eaf0f6;
     border-radius: 7px;
     background-color: white;
+    padding: 30px;
+}
+
+/* .offer-list .col-4:nth-of-type(1) .offer-box {
+    margin-right: 5%;
+}
+
+.offer-list .col-4:nth-of-type(2) .offer-box {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.offer-list .col-4:nth-of-type(3) .offer-box {
+    margin-left: 5%;
+} */
+
+.offer-list .col-4 {
+    padding: 0 calc(100% / (12 * 2));
 }
 
 .our-offer h4 {
     text-transform: uppercase;
 }
 
-.fake-hr::before {
+.offer-list .fake-hr::before,
+.fullscreen-offer .fake-hr::after {
     content: "";
     width: 90%;
     margin: auto;
@@ -231,9 +242,11 @@ h1 {
 }
 
 .offer-list .offer-box .fake-hr::before {
-    /* TEST */
     display: block;
+}
 
+.fullscreen-offer .fake-hr::after {
+    display: inline-block;
 }
 
 .offer-box img {
@@ -257,6 +270,10 @@ h1 {
     border-left: 1px solid white;
 }
 
+.results img {
+    height: 50px;
+}
+
 .big-num {
     font-size: 250%;
     font-weight: 700;
@@ -270,9 +287,7 @@ h1 {
 /* /results */
 
 /* partners */
-.partner {
-    padding-top: 40px;
-}
+
 
 .partner li {
     width: 23%;
@@ -290,7 +305,7 @@ h1 {
 
 .final-spot img {
     width: 90%;
-    vertical-align: middle;
+    vertical-align: baseline;
 }
 
 /* end results */
