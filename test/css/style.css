@@ -1,10 +1,4 @@
-.container::after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-nav li {
+header nav li {
     display: inline-block;
 
 }
