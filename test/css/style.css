@@ -1,8 +1,3 @@
-header nav li {
-    display: inline-block;
-
-}
-
 nav [class*="col-"]:last-of-type {
     text-align: right;
 }
@@ -27,27 +22,14 @@ body {
 }
 
 /* Padding */
-
+.section,
+.results-banner *,
 .text-container *,
-.results *,
 .our-offer *,
-.partner * {
+.results-list .col-3 * {
     padding: 10px 0;
 }
 
-.partner *,
-.offer-detail * {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.results .float-container {
-    padding: 0;
-}
-
-.results .floater * {
-    padding: 10px 20px;
-}
 
 /* /Padding */
 
@@ -55,16 +37,16 @@ body {
 
 .fullscreen-offer li,
 .fullscreen-offer h4,
-.bar,
-.partner img,
+header nav li,
 .languages li,
 .social li,
+.partner li,
 .btn {
     display: inline-block;
 }
 
 .our-offer img,
-.results .four-cols *,
+.results-list *,
 footer span {
     display: block;
 }
@@ -76,9 +58,7 @@ footer span {
 .offer-box,
 .slogan,
 .results,
-.languages,
-.fullscreen-offer .first,
-.btn {
+.languages {
     text-align: center;
 }
 
@@ -90,12 +70,6 @@ footer span {
 
 .our-offer img,
 .results img {
-    margin: auto;
-}
-
-.wrapper,
-.slogan {
-    width: 80%;
     margin: auto;
 }
 
@@ -117,7 +91,6 @@ footer span {
 
 .btn {
     color: white;
-    /* padding: 20px; */
     background-color: #fe775a;
     border-radius: 5px;
 }
@@ -171,11 +144,6 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1; */
-}
-
-.our-offer .slogan {
-    background-color: #f4f9fd;
-
 }
 
 .divided::after {
@@ -255,13 +223,16 @@ h1 {
     text-transform: uppercase;
 }
 
-.offer-box .fake-hr::before {
-    /* TEST */
+.fake-hr::before {
     content: "";
     width: 90%;
     margin: auto;
     border-bottom: 1px solid red;
-    display: inline-block;
+}
+
+.offer-list .offer-box .fake-hr::before {
+    /* TEST */
+    display: block;
 
 }
 
@@ -278,11 +249,11 @@ h1 {
     color: white;
 }
 
-.results .float-container:last-of-type {
+.results-list:last-of-type .container .container {
     border-top: 1px solid white;
 }
 
-.results .floater:nth-child(1n+2) {
+.results-list .col-3:nth-child(1n+2) {
     border-left: 1px solid white;
 }
 
@@ -299,25 +270,27 @@ h1 {
 /* /results */
 
 /* partners */
-
 .partner {
-    width: 90%;
-    margin: auto;
+    padding-top: 40px;
+}
+
+.partner li {
+    width: 23%;
+    margin-right: 1%;
 }
 
 .partner img {
-    width: 24%;
+    width: 100%;
+    vertical-align: middle;
 }
 
 /* /partners */
 
 /* final-spot */
 
-.final-spot {
-    background-image: url("../img/woman.webp");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: 95% 90%;
+.final-spot img {
+    width: 90%;
+    vertical-align: middle;
 }
 
 /* end results */
