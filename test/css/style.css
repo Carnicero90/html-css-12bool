@@ -65,7 +65,7 @@ body {
 }
 
 nav .container {
-    /* margin: 20px; */
+    margin: 0 20px;
 }
 
 .our-offer img,
@@ -110,29 +110,6 @@ footer span {
     float: left;
 }
 
-.float-container::after {
-    content: "";
-    /* display: table; */
-    clear: both;
-}
-
-
-footer .navbar .two-cols {
-    width: 50%
-}
-
-.three-cols {
-    width: 30%;
-}
-
-.three-cols:nth-of-type(2) {
-    margin: 0 5%;
-}
-
-.four-cols {
-    width: 25%;
-}
-
 /* Common-text */
 
 .caption {
@@ -161,9 +138,9 @@ footer .btn {
     color: #32495b;
 }
 
-.navbar .btn,
+nav .btn,
 .links .btn {
-    /* padding: 0 10px; */
+    padding: 0 10px;
 }
 
 /* END COMMON */
@@ -177,8 +154,6 @@ header {
 /* Navbar */
 
 nav {
-    /* height: 80px; */
-    /* line-height: 40px; */
     padding: 20px 0;
 }
 
@@ -201,6 +176,11 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1; */
+}
+
+.our-offer .slogan {
+    background-color: #f4f9fd;
+
 }
 
 .divided::after {
