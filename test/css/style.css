@@ -35,7 +35,6 @@ body {
     padding: 10px 0;
 }
 
-.our-offer .fullscreen-offer *,
 .partner *,
 .offer-detail * {
     padding-left: 20px;
@@ -64,10 +63,6 @@ body {
     display: inline-block;
 }
 
-nav .container {
-    margin: 0 20px;
-}
-
 .our-offer img,
 .results .four-cols *,
 footer span {
@@ -78,7 +73,7 @@ footer span {
 
 /* Text-align */
 
-.offer-detail,
+.offer-box,
 .slogan,
 .results,
 .languages,
@@ -87,7 +82,7 @@ footer span {
     text-align: center;
 }
 
-.offer-detail li {
+.our-offer li {
     text-align: left;
 }
 
@@ -197,7 +192,6 @@ nav {
     position: relative;
     background-image: url("../img/jumbotron.png");
     background-repeat: no-repeat;
-    background-color: #fff4ef;
     background-position: 100% 65%;
     height: 600px;
 }
@@ -241,6 +235,8 @@ h1 {
 
 /* our-offer>offer-detail */
 
+
+
 .our-offer li::before {
     font-family: "Font Awesome 5 Free";
     content: "\f058";
@@ -249,26 +245,28 @@ h1 {
     margin-right: 4px;
 }
 
-.offer-detail,
-.fullscreen-offer {
+.offer-box {
     box-shadow: 0 0 11px #eaf0f6;
-    background-color: white;
     border-radius: 7px;
+    background-color: white;
 }
 
 .our-offer h4 {
     text-transform: uppercase;
 }
 
-.offer-detail img,
-.fullscreen-offer img {
-    height: 130px;
+.offer-box .fake-hr::before {
+    /* TEST */
+    content: "";
+    width: 90%;
+    margin: auto;
+    border-bottom: 1px solid red;
+    display: inline-block;
+
 }
 
-.bar {
-    border: 1px solid #899397;
-    width: 60%;
-    padding: 0;
+.offer-box img {
+    height: 130px;
 }
 
 /* /our-offer>offer-detail */
